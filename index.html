@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Frogger, a sample game for learning code basics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<!-- Main selection popup for choosing avatar, difficulty, and game duration -->
+	<div id="selectionPopup">
+		<h1>Are you ready for a Frogger Game??</h1>
+		<hr>
+			<h2>Game Instructions</h2>
+			<h3>Collect as many gems and stars as you can without <br> getting hit by the enemy bug cars. </h3> <h3>Use your keyboard arrows</h3> 
+		<hr>
+			<h2>Choose your avatar:</h2>
+			<img id="avatar0" class="avatarImg" onclick="avatarClick(this.id, 0)" src="images/char-boy.png" alt="boy avatar"/>
+			<img id="avatar1" class="avatarImg" onclick="avatarClick(this.id, 1)" src="images/char-cat-girl.png" alt="cat girl avatar" />
+			<img id="avatar2" class="avatarImg" onclick="avatarClick(this.id, 2)" src="images/char-horn-girl.png" alt="horn girl avatar"/>
+			<img id="avatar3" class="avatarImg" onclick="avatarClick(this.id, 3)" src="images/char-pink-girl.png" alt="pink girl avatar"/>
+			<img id="avatar4" class="avatarImg" onclick="avatarClick(this.id, 4)" src="images/char-princess-girl.png" alt="princess girl avatar"/>
+		<hr>
+			<h2>Take it easy, or challenge yourself:</h2>
+			<button id="easyButton" class="button difficultyButton" onclick="difficultyClick(this.id, 'Easy')">Easy</button>
+			<button id="mediumButtom" class="button difficultyButton" onclick="difficultyClick(this.id, 'Medium')">Medium</button>
+			<button id="hardButton" class="button difficultyButton" onclick="difficultyClick(this.id, 'Hard')">Hard</button>
+		<hr>
+			<h2>Quick game, or a few minutes to spare?</h2>
+			<button id="twoButton" class="button durationButton" onclick="timeClick (this.id, 'one')">1 Minute</button>
+			<button id="fourButton" class="button durationButton" onclick="timeClick (this.id, 'two')">2 Minutes</button>
+			<button id="sixButton" class="button durationButton" onclick="timeClick (this.id, 'three')">3 Minutes</button>
+		<hr>
+			<button id="startGame" class="button" onclick="startClick();">Start Game</button>
+		<hr>
+			<p id="signature">Created by YOUR NAME HERE</p>
+	</div>
+
+	<!-- Game over popup, to display points summary -->
+	<div id="gameOverPopup">
+    	<h1>Game Over!</h1>
+    	<hr>
+	    	<div id="gameSummary">
+	    		<h2>You Scored</h2>
+	    		<h1 id="pointsSummary">0</h1>
+	    		<h2>Points</h2>
+	    	</div>
+    	<hr>
+	    	<p id="signature">YOUR NAME HERE</p>
+    </div>
+
+    <!-- Stats -->
+     <div id ="stats">
+	    <div id="lives">Lives: 7</div>
+		<div id="timer">2:00</div>
+		<div id="points">Points: 0</div>
+	</div>
+
+	<script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+
+    <div id="dificultyText">Dificulty: Easy</div>
+
+    <button id="resetButton" class="button" onclick="history.go(0)">Reset</button>
+
+</body>
+</html>

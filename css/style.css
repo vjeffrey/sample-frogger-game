@@ -1,0 +1,148 @@
+html {
+    font-family: 'Roboto';
+    color: #1f3d00;
+}
+
+body {
+    text-align: center;
+    margin: 30px 375px;
+    width: 515px;
+}
+
+canvas {
+    margin: 20px 0px 0px 0px;
+}
+
+h1{
+    margin: 0px 0px 20px 0px;
+}
+
+h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+h3 {
+    color: black;
+}
+
+#selectionPopup {
+    z-index: 1000;
+    position: absolute;
+    width: 650px;
+    height: 800px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+}
+
+.avatarImg {
+	height: 105px;
+	width: 63px;
+	margin: 0px 10px 15px 10px;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+
+.button {
+	height: 40px;
+	width: 120px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: white;
+}
+
+.button:focus, .button:active, .button:focus:active {
+  background-image: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#easyButton {
+	background-color: white;
+}
+
+#mediumButtom {
+	background-color: white;
+}
+
+#hardButton {
+	background-color: white;
+}
+
+#startGame {
+    width: 200px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+#lives {
+    position: absolute;
+    margin: 10px 0px 1px 12px;
+    font-weight: bold;
+}
+
+#timer {
+    position: absolute;
+    margin: 10px 0px 1px 4px;
+    width: 505px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#points {
+    position: absolute;
+    margin: 10px 12px 1px 0px;
+    width: 505px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#dificultyText {
+    position: absolute;
+    margin: -15px 0px 0px 4px;
+    width: 505px;
+    text-align: center;
+}
+
+#resetButton {
+    margin: 10px 0px 0px 0px;
+}
+
+#gameOverPopup {
+    z-index: 1000;
+    position: absolute;
+    width: 515px;
+    height: 560px;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+#gameSummary {
+    margin: 140px 0px 140px 0px;
+}
+
+#pointsSummary {
+    margin: 13px 0px 10px 0px;
+    font-size: 400%;
+}
+
+#signature {
+    margin: 0px 0px 5px 0px;
+    color: #5E5E5E;
+}
