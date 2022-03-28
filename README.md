@@ -27,3 +27,5 @@ You can change characters, speeds, levels, items, and other parts of the game.
 - The `index.html` file has the code for the beginning selection screen. 
 - Most of the app logic is in `js/app.js`, and the images should be placed in the images folders (and references to images updated). 
 - To change colors or the font, take a look at `css/style.css`
+
+NOTE: this code is all borrowed from a Udacity course I took some 7 years ago, it was one of the projects in the course.
